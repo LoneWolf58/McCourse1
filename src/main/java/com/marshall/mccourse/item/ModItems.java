@@ -1,6 +1,7 @@
 package com.marshall.mccourse.item;
 
 import com.marshall.mccourse.MCCourseMod;
+import com.marshall.mccourse.block.ModBlocks;
 import com.marshall.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -78,6 +79,10 @@ public class ModItems
             Registration.ITEMS.register("copper_boots",
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(MCCourseMod.COURSE_TAB)));
+
+    public static final RegistryObject<Item> ZUCCINI_SEED =
+            Registration.ITEMS.register("zuccini_seed",
+                    () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(), new Item.Properties().group(MCCourseMod.COURSE_TAB)));
 
 
 

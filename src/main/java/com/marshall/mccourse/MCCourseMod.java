@@ -41,6 +41,8 @@ public class MCCourseMod
         }
     };
 
+
+
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 

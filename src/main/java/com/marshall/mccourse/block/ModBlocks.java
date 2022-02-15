@@ -45,6 +45,10 @@ public class ModBlocks
     public static final RegistryObject<Block> COPPER_SLAB =
             register("copper_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)));
 
+    public static final RegistryObject<Block> ZUCCINI_CROP =
+            Registration.BLOCKS.register("zuccini_crop",
+                    () -> new ZucciniCrop(AbstractBlock.Properties.from(Blocks.WHEAT)));
+
     public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)
