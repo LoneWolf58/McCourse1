@@ -2,6 +2,7 @@ package com.marshall.mccourse.item;
 
 import com.marshall.mccourse.MCCourseMod;
 import com.marshall.mccourse.block.ModBlocks;
+import com.marshall.mccourse.block.ModFluids;
 import com.marshall.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -10,6 +11,7 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
+import org.lwjgl.system.CallbackI;
 
 public class ModItems
 {
@@ -83,6 +85,11 @@ public class ModItems
     public static final RegistryObject<Item> ZUCCINI_SEED =
             Registration.ITEMS.register("zuccini_seed",
                     () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(), new Item.Properties().group(MCCourseMod.COURSE_TAB)));
+
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket",
+                    () -> new BucketItem(ModFluids.OIL_FLUID::get,
+                            new Item.Properties().group(MCCourseMod.COURSE_TAB).maxStackSize(1)));
 
 
 
