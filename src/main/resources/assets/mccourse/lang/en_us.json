@@ -15,7 +15,7 @@
 
   "item.mccourse.oil_bucket": "Oil Bucket",
 
-  "block.mcourse.zuccini_crop": "Zuccini Seeds",
+  "block.mccourse.zuccini_crop": "Zuccini Seeds",
 
   "block.mccourse.copper_block": "Copper Block",
   "block.mccourse.copper_ore": "Copper Ore",
@@ -26,6 +26,8 @@
   "block.mccourse.copper_button": "Copper Button",
   "block.mccourse.copper_pressure_plate": "Copper Pressure Plate",
   "block.mccourse.copper_slab": "Copper Slab",
+
+  "block.mccourse.electrifier": "Electrifier",
 
   "itemGroup.courseTab": "Course Tab"
 
