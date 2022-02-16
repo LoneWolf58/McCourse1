@@ -2,11 +2,13 @@ package com.marshall.mccourse;
 
 import com.marshall.mccourse.block.ModBlocks;
 import com.marshall.mccourse.block.ModFluids;
+import com.marshall.mccourse.container.ModContainers;
 import com.marshall.mccourse.events.ModEvents;
 import com.marshall.mccourse.item.ModItems;
 import com.marshall.mccourse.setup.ClientProxy;
 import com.marshall.mccourse.setup.IProxy;
 import com.marshall.mccourse.setup.ServerProxy;
+import com.marshall.mccourse.tileentity.ModTileEntities;
 import com.marshall.mccourse.util.Config;
 import com.marshall.mccourse.util.Registration;
 import net.minecraft.block.Block;
@@ -95,6 +97,9 @@ public class MCCourseMod
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
+        ModTileEntities.register();
+        ModContainers.register();
+
 
         //registers mod events
         MinecraftForge.EVENT_BUS.register(new ModEvents());
