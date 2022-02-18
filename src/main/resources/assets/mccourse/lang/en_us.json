@@ -15,6 +15,13 @@
 
   "item.mccourse.oil_bucket": "Oil Bucket",
 
+  "item.mccourse.buffalo_spawn_egg": "Buffalo Spawn Egg",
+
+  "block.mccourse.redwood_log": "Redwood Log",
+  "block.mccourse.redwood_leaves": "Redwood Leaves",
+  "block.mccourse.redwood_planks": "Redwood Planks",
+  "block.mccourse.redwood_sapling": "Redwood Sapling",
+
   "block.mccourse.zuccini_crop": "Zuccini Seeds",
 
   "block.mccourse.copper_block": "Copper Block",
@@ -29,7 +36,9 @@
 
   "block.mccourse.electrifier": "Electrifier",
 
-  "itemGroup.courseTab": "Course Tab"
+  "itemGroup.courseTab": "Course Tab",
+
+  "entity.mccourse.buffalo": "Buffalo"
 
 
 }

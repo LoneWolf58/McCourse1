@@ -1,4 +1,4 @@
-package com.marshall.mccourse.entites.model;
+package com.marshall.mccourse.entities.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;

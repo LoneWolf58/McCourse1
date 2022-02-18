@@ -1,0 +1,21 @@
+package com.marshall.mccourse.world.biome;
+
+
+import com.marshall.mccourse.util.Registration;
+import net.minecraft.util.RegistryKey;
+import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
+import net.minecraftforge.fml.RegistryObject;
+
+public class ModConfiguredSurfaceBuilders
+{
+    public static final RegistryObject<SurfaceBuilder<SurfaceBuilderConfig>> LOGGING_DEFAULT =
+            Registration.SURFACE_BUILDERS.register("logging_default",
+                    () -> new LoggingSurfaceBuilder<>(() -> SurfaceBuilder.DEFAULT, SurfaceBuilderConfig.field_237203_a_));
+    public static RegistryKey<ConfiguredSurfaceBuilder<?>> OIL_SURFACE;
+
+
+    public static void register() {
+    }
+}

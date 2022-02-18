@@ -3,6 +3,7 @@ package com.marshall.mccourse.item;
 import com.marshall.mccourse.MCCourseMod;
 import com.marshall.mccourse.block.ModBlocks;
 import com.marshall.mccourse.block.ModFluids;
+import com.marshall.mccourse.entities.ModEntityTypes;
 import com.marshall.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -11,7 +12,6 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
-import org.lwjgl.system.CallbackI;
 
 public class ModItems
 {
@@ -91,7 +91,10 @@ public class ModItems
                     () -> new BucketItem(ModFluids.OIL_FLUID::get,
                             new Item.Properties().group(MCCourseMod.COURSE_TAB).maxStackSize(1)));
 
-
+    public static final RegistryObject<ModSpawnEggItem> BUFFALO_SPAWNING_EGG =
+            Registration.ITEMS.register("buffalo_spawn_egg",
+                    () -> new ModSpawnEggItem(ModEntityTypes.BUFFALO, 0xf02f4A, 0x7034f1,
+                            new Item.Properties().group(MCCourseMod.COURSE_TAB)));
 
     public static void register() { }
 

@@ -1,8 +1,8 @@
-package com.marshall.mccourse.entites.render;
+package com.marshall.mccourse.entities.render;
 
 import com.marshall.mccourse.MCCourseMod;
-import com.marshall.mccourse.entites.BuffaloEntity;
-import com.marshall.mccourse.entites.model.BuffaloModel;
+import com.marshall.mccourse.entities.BuffaloEntity;
+import com.marshall.mccourse.entities.model.BuffaloModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

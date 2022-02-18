@@ -53,6 +53,24 @@ public class ModBlocks
            register("electrifier", () -> new Electrifier(AbstractBlock.Properties.create(Material.IRON)
                    .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE)));
 
+    public static final RegistryObject<Block> REDWOOD_PLANKS = register("redwood_planks",
+            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> REDWOOD_LOG = register("redwood_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> REDWOOD_LEAVES = register("redwood_leaves",
+            () -> new LeavesBlock(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
+
+
+    public static final RegistryObject<Block> REDWOOD_SAPLING = register("redwood_sapling",
+            () -> new RedwoodSapling(
+                    () -> new RedwoodTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)
+            ));
+
+
+
+
     public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)

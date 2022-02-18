@@ -2,12 +2,13 @@ package com.marshall.mccourse.util;
 
 import com.marshall.mccourse.MCCourseMod;
 import net.minecraft.block.Block;
-import net.minecraft.block.ContainerBlock;
+import net.minecraft.entity.EntityType;
 import net.minecraft.fluid.Fluid;
-import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -30,7 +31,18 @@ public class Registration
     public static final DeferredRegister<ContainerType<?>> CONTAINERS =
             DeferredRegister.create(ForgeRegistries.CONTAINERS, MCCourseMod.MOD_ID);
 
-    public static void init()
+    public static final DeferredRegister<EntityType<?>> ENTITIES
+            = DeferredRegister.create(ForgeRegistries.ENTITIES, MCCourseMod.MOD_ID);
+
+    public static DeferredRegister<EntityType<?>> ENTITY_TYPES
+            = DeferredRegister.create(ForgeRegistries.ENTITIES, MCCourseMod.MOD_ID);
+
+    public static final DeferredRegister<Biome> BIOMES
+            = DeferredRegister.create(ForgeRegistries.BIOMES, MCCourseMod.MOD_ID);
+
+    public static final DeferredRegister<SurfaceBuilder<?>> SURFACE_BUILDERS
+            = DeferredRegister.create(ForgeRegistries.SURFACE_BUILDERS, MCCourseMod.MOD_ID);
+
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventBus);
@@ -38,5 +50,12 @@ public class Registration
         FLUIDS.register(eventBus);
         TILE_ENTITY_TYPES.register(eventBus);
         CONTAINERS.register(eventBus);
+        ENTITIES.register(eventBus);
+        ENTITY_TYPES.register(eventBus);
+        BIOMES.register(eventBus);
+        SURFACE_BUILDERS.register(eventBus);
+    }
+
+    public static void init() {
     }
 }

@@ -1,6 +1,5 @@
 package com.marshall.mccourse.entities;
 
-import com.marshall.mccourse.entites.ModEntityTypes;
 import com.marshall.mccourse.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.AgeableEntity;

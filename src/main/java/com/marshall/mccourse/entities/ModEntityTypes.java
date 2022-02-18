@@ -1,4 +1,4 @@
-package com.marshall.mccourse.entites;
+package com.marshall.mccourse.entities;
 
 import com.marshall.mccourse.MCCourseMod;
 import com.marshall.mccourse.util.Registration;
@@ -11,7 +11,7 @@ public class ModEntityTypes
 {
 
     public static final RegistryObject<EntityType<com.marshall.mccourse.entities.BuffaloEntity>> BUFFALO = Registration.ENTITY_TYPES.register("buffalo",
-            () -> EntityType.Builder.create(com.marshall.mccourse.entites.BuffaloEntity::new, EntityClassification.CREATURE)
+            () -> EntityType.Builder.create(com.marshall.mccourse.entities.BuffaloEntity::new, EntityClassification.CREATURE)
                     .size(1.5f, 1.5f)
                     .build(new ResourceLocation(MCCourseMod.MOD_ID + "buffalo").toString()));
 
